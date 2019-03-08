@@ -1,0 +1,74 @@
+@startuml
+skinparam dpi 300
+hide class circle
+hide interface circle
+skinparam classAttributeIconSize 0
+'set namespaceSeparator .
+set namespaceSeparator none
+hide methods
+class Scheduler {
+  - analytics: Analytic[]
+  - loadCurve: Formula
+
+  - loadDatabase(): void
+  - saveDatabase(): void
+  - getSchedule(): Schedule
+}
+class Analytic {
+  - analyticId: String
+  - scriptPath: String
+  - runs: Run[]
+  - runFrequency: Time
+}
+class Run {
+  - jobs: Job[]
+  - output: String
+}
+class Job {
+  + jobId: String
+  + numMappers: int
+  + numReducers: int
+  + minMapTime: float
+  + averageMapTime: float
+  + medianMapTime: float
+  + maxMapTime: float
+  + minReduceTime: float
+  + averageReduceTime: float
+  + medianReduceTime: float
+  + maxReduceTime: float
+  + alias: String
+  + feature: String
+  + outputs: String
+}
+
+class Schedule << Dict >> {
+  + jobs: namedtuple<analyticId, startTime>[]
+}
+
+interface SchedulingAlgorithm {
+  + getSchedule(Analytic[], Formula): Schedule
+}
+
+class Algorithm2 {
+  + getSchedule(Analytic[], Formula): Schedule
+}
+class Algorithm1 {
+  + getSchedule(Analytic[], Formula): Schedule
+}
+
+show Scheduler methods
+show SchedulingAlgorithm methods
+show Algorithm1 methods
+show Algorithm2 methods
+
+Analytic o-- Run
+Job --* Run
+Scheduler o--r Analytic
+
+Algorithm1 --u|> SchedulingAlgorithm
+Algorithm2 --u|> SchedulingAlgorithm
+SchedulingAlgorithm -u- Scheduler
+SchedulingAlgorithm -l- Schedule
+'Scheduler -- Schedule
+
+@enduml

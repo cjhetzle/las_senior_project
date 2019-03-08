@@ -1,0 +1,161 @@
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+19/02/20 09:34:39 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+19/02/20 09:34:39 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+19/02/20 09:34:39 INFO pig.ExecTypeProvider: Picked MAPREDUCE as the ExecType
+2019-02-20 09:34:39,384 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0.3.1.0.0-78 (rUnversioned directory) compiled Dec 06 2018, 12:29:08
+2019-02-20 09:34:39,384 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/seniorDesign2019/pigmix/scripts/pig_1550655279383.log
+2019-02-20 09:34:39,749 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/agadler/.pigbootup not found
+2019-02-20 09:34:39,826 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://pigfarm-master.ncsu-las.priv:8020
+2019-02-20 09:34:40,204 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: PIG-L5.pig-0a1f1c0f-2202-452d-9dc9-63b2abbf78e4
+2019-02-20 09:34:40,361 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: pigfarm-node-1.ncsu-las.priv:8188
+2019-02-20 09:34:40,698 [main] INFO  org.apache.pig.backend.hadoop.PigATSClient - Created ATS Hook
+2019-02-20 09:34:40,813 [main] INFO  org.apache.pig.tools.grunt.GruntParser - Waited 0ms to delete file
+2019-02-20 09:34:41,238 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+2019-02-20 09:34:41,418 [main] WARN  org.apache.pig.newplan.BaseOperatorPlan - Encountered Warning IMPLICIT_CAST_TO_LONG 1 time(s).
+2019-02-20 09:34:41,452 [main] INFO  org.apache.pig.tools.pigstats.ScriptState - Pig features used in the script: COGROUP,FILTER
+2019-02-20 09:34:41,473 [main] INFO  org.apache.pig.data.SchemaTupleBackend - Key [pig.schematuple] was not set... will not generate code.
+2019-02-20 09:34:41,516 [main] INFO  org.apache.pig.newplan.logical.optimizer.LogicalPlanOptimizer - {RULES_ENABLED=[AddForEach, ColumnMapKeyPrune, ConstantCalculator, GroupByConstParallelSetter, LimitOptimizer, LoadTypeCastInserter, MergeFilter, MergeForEach, PartitionFilterOptimizer, PredicatePushdownOptimizer, PushDownForEachFlatten, PushUpFilter, SplitFilter, StreamTypeCastInserter]}
+2019-02-20 09:34:41,603 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for alpha: $1, $2, $3, $4, $5
+2019-02-20 09:34:41,604 [main] INFO  org.apache.pig.newplan.logical.rules.ColumnPruneVisitor - Columns pruned for A: $1, $2, $3, $4, $5, $6, $7, $8
+2019-02-20 09:34:41,669 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MRCompiler - File concatenation threshold: 100 optimistic? false
+2019-02-20 09:34:41,711 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size before optimization: 1
+2019-02-20 09:34:41,711 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MultiQueryOptimizer - MR plan size after optimization: 1
+2019-02-20 09:34:41,775 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:34:42,012 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:34:42,068 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.MRScriptState - Pig script settings are added to the job
+2019-02-20 09:34:42,073 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - mapred.job.reduce.markreset.buffer.percent is not set, set to default 0.3
+2019-02-20 09:34:42,075 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Reduce phase detected, estimating # of required reducers.
+2019-02-20 09:34:42,076 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Using reducer estimator: org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator
+2019-02-20 09:34:42,325 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.InputSizeReducerEstimator - BytesPerReducer=1000000000 maxReducers=999 totalInputFileSize=108334450340
+2019-02-20 09:34:42,325 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting Parallelism to 109
+2019-02-20 09:34:42,325 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - This job cannot be converted run in-process
+2019-02-20 09:34:42,696 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/home/seniorDesign2019/pigmix/pigperf.jar to DistributedCache through /tmp/temp1560069505/tmp432723022/pigperf.jar
+2019-02-20 09:34:43,168 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/3.1.0.0-78/pig/pig-0.16.0.3.1.0.0-78-core-h2.jar to DistributedCache through /tmp/temp1560069505/tmp645840849/pig-0.16.0.3.1.0.0-78-core-h2.jar
+2019-02-20 09:34:43,598 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/3.1.0.0-78/pig/lib/automaton-1.11-8.jar to DistributedCache through /tmp/temp1560069505/tmp-240278320/automaton-1.11-8.jar
+2019-02-20 09:34:43,631 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/3.1.0.0-78/pig/lib/antlr-runtime-3.4.jar to DistributedCache through /tmp/temp1560069505/tmp-2029654625/antlr-runtime-3.4.jar
+2019-02-20 09:34:43,658 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Added jar file:/usr/hdp/3.1.0.0-78/pig/lib/joda-time-2.9.3.jar to DistributedCache through /tmp/temp1560069505/tmp-1184052890/joda-time-2.9.3.jar
+2019-02-20 09:34:43,668 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.JobControlCompiler - Setting up single store job
+2019-02-20 09:34:43,675 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Key [pig.schematuple] is false, will not generate code.
+2019-02-20 09:34:43,675 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Starting process to move generated code to distributed cacche
+2019-02-20 09:34:43,675 [main] INFO  org.apache.pig.data.SchemaTupleFrontend - Setting key [pig.schematuple.classes] with classes to deserialize []
+2019-02-20 09:34:43,748 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 1 map-reduce job(s) waiting for submission.
+2019-02-20 09:34:43,755 [JobControl] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:34:43,755 [JobControl] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:34:43,956 [JobControl] INFO  org.apache.hadoop.mapreduce.JobResourceUploader - Disabling Erasure Coding for path: /user/agadler/.staging/job_1550601475905_0056
+2019-02-20 09:34:43,964 [JobControl] WARN  org.apache.hadoop.mapreduce.JobResourceUploader - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2019-02-20 09:34:43,989 [JobControl] INFO  org.apache.pig.builtin.PigStorage - Using PigTextInputFormat
+2019-02-20 09:34:44,153 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input files to process : 1410
+2019-02-20 09:34:44,153 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1410
+2019-02-20 09:34:44,235 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1
+2019-02-20 09:34:44,240 [JobControl] INFO  org.apache.pig.test.udf.storefunc.PigPerformanceLoader - Using PigTextInputFormat
+2019-02-20 09:34:44,320 [JobControl] INFO  org.apache.hadoop.mapreduce.lib.input.FileInputFormat - Total input files to process : 1400
+2019-02-20 09:34:44,320 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths to process : 1400
+2019-02-20 09:34:44,357 [JobControl] INFO  org.apache.pig.backend.hadoop.executionengine.util.MapRedUtil - Total input paths (combined) to process : 1400
+2019-02-20 09:34:44,469 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - number of splits:1401
+2019-02-20 09:34:44,618 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Submitting tokens for job: job_1550601475905_0056
+2019-02-20 09:34:44,619 [JobControl] INFO  org.apache.hadoop.mapreduce.JobSubmitter - Executing with tokens: []
+2019-02-20 09:34:44,744 [JobControl] INFO  org.apache.hadoop.mapred.YARNRunner - Job jar is not present. Not adding any jar to the list of resources.
+2019-02-20 09:34:44,811 [JobControl] INFO  org.apache.hadoop.conf.Configuration - found resource resource-types.xml at file:/etc/hadoop/3.1.0.0-78/0/resource-types.xml
+2019-02-20 09:34:44,867 [JobControl] INFO  org.apache.hadoop.yarn.client.api.impl.YarnClientImpl - Submitted application application_1550601475905_0056
+2019-02-20 09:34:44,900 [JobControl] INFO  org.apache.hadoop.mapreduce.Job - The url to track the job: http://pigfarm-master.ncsu-las.priv:8088/proxy/application_1550601475905_0056/
+2019-02-20 09:34:44,900 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - HadoopJobId: job_1550601475905_0056
+2019-02-20 09:34:44,900 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Processing aliases A,B,C,D,E,alpha,beta
+2019-02-20 09:34:44,901 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - detailed locations: M: A[9,4],B[-1,-1],C[16,4],alpha[13,8],beta[-1,-1],C[16,4] C:  R: C[-1,-1],D[17,4],E[18,4]
+2019-02-20 09:34:44,906 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 0% complete
+2019-02-20 09:34:44,907 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:35:57,146 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 4% complete
+2019-02-20 09:35:57,146 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:37:02,272 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 8% complete
+2019-02-20 09:37:02,272 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:38:17,379 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 12% complete
+2019-02-20 09:38:17,379 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:39:37,452 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 16% complete
+2019-02-20 09:39:37,452 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:41:05,047 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 20% complete
+2019-02-20 09:41:05,047 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:42:42,626 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 24% complete
+2019-02-20 09:42:42,626 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:44:42,727 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 28% complete
+2019-02-20 09:44:42,727 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:46:42,818 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 32% complete
+2019-02-20 09:46:42,818 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:48:44,448 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 36% complete
+2019-02-20 09:48:44,448 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:50:45,072 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 40% complete
+2019-02-20 09:50:45,072 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:52:47,661 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 44% complete
+2019-02-20 09:52:47,661 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:54:49,767 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 48% complete
+2019-02-20 09:54:49,767 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:55:50,305 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 53% complete
+2019-02-20 09:55:50,305 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:55:57,810 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 57% complete
+2019-02-20 09:55:57,810 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:02,813 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 62% complete
+2019-02-20 09:56:02,813 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:09,818 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 66% complete
+2019-02-20 09:56:09,818 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:17,823 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 70% complete
+2019-02-20 09:56:17,824 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:27,830 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 76% complete
+2019-02-20 09:56:27,831 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:34,835 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 80% complete
+2019-02-20 09:56:34,835 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:39,842 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 84% complete
+2019-02-20 09:56:39,842 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:47,846 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 88% complete
+2019-02-20 09:56:47,847 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:56:52,850 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 93% complete
+2019-02-20 09:56:52,850 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:57:00,354 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 98% complete
+2019-02-20 09:57:00,354 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Running jobs are [job_1550601475905_0056]
+2019-02-20 09:57:05,862 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:57:05,863 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:57:05,867 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2019-02-20 09:57:06,323 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:57:06,324 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:57:06,327 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2019-02-20 09:57:06,600 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:57:06,600 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:57:06,603 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2019-02-20 09:57:06,630 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - 100% complete
+2019-02-20 09:57:06,633 [main] INFO  org.apache.pig.tools.pigstats.mapreduce.SimplePigStats - Script Statistics: 
+
+HadoopVersion	PigVersion	UserId	StartedAt	FinishedAt	Features
+3.1.1.3.1.0.0-78	0.16.0.3.1.0.0-78	agadler	2019-02-20 09:34:42	2019-02-20 09:57:06	COGROUP,FILTER
+
+Success!
+
+Job Stats (time in seconds):
+JobId	Maps	Reduces	MaxMapTime	MinMapTime	AvgMapTime	MedianMapTime	MaxReduceTime	MinReduceTime	AvgReduceTime	MedianReducetime	Alias	Feature	Outputs
+job_1550601475905_0056	1401	109	24	4	7	7	1180	3	52	5	A,B,C,D,E,alpha,beta	COGROUP	/output/L5out,
+
+Input(s):
+Successfully read 160001 records from: "/data/pigmix/pigmix_users"
+Successfully read 67000000 records from: "/data/pigmix/pigmix_page_views"
+
+Output(s):
+Successfully stored 128011 records (2623611 bytes) in: "/output/L5out"
+
+Counters:
+Total records written : 128011
+Total bytes written : 2623611
+Spillable Memory Manager spill count : 0
+Total bags proactively spilled: 1
+Total records proactively spilled: 1512511
+
+Job DAG:
+job_1550601475905_0056
+
+
+2019-02-20 09:57:06,635 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:57:06,636 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:57:06,639 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2019-02-20 09:57:06,938 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:57:06,938 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:57:06,940 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2019-02-20 09:57:06,986 [main] INFO  org.apache.hadoop.yarn.client.RMProxy - Connecting to ResourceManager at pigfarm-master.ncsu-las.priv/10.0.28.81:8050
+2019-02-20 09:57:06,987 [main] INFO  org.apache.hadoop.yarn.client.AHSProxy - Connecting to Application History server at pigfarm-node-1.ncsu-las.priv/10.0.28.195:10200
+2019-02-20 09:57:06,989 [main] INFO  org.apache.hadoop.mapred.ClientServiceDelegate - Application state is completed. FinalApplicationStatus=SUCCEEDED. Redirecting to job history server
+2019-02-20 09:57:07,004 [main] INFO  org.apache.pig.backend.hadoop.executionengine.mapReduceLayer.MapReduceLauncher - Success!
+2019-02-20 09:57:07,026 [main] INFO  org.apache.pig.Main - Pig script completed in 22 minutes, 27 seconds and 700 milliseconds (1347700 ms)

@@ -1,0 +1,7 @@
+*.npy
+*.pyc
+.floo
+.ipynb_checkpoints
+__pycache__
+data.p
+pig_*.log

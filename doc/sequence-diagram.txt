@@ -1,0 +1,22 @@
+@startuml
+skinparam dpi 300
+
+"Scheduled Event" --> Scheduler: Spawn scheduler
+
+== Input Handling ==
+Scheduler -> Scheduler: Read schedule CSV
+Scheduler -> Scheduler: Read target load curve
+
+== Initialization ==
+Scheduler -> Scheduler: Load existing pickle data
+Scheduler --> "Log Path": Query new logs
+"Log Path" -> Scheduler: Return new logs
+Scheduler -> Scheduler: Add new logs to database
+Scheduler -> Scheduler: Save database in pickle
+
+== Main Stage ==
+Scheduler --> "Chosen Algorithm": Request schedule
+"Chosen Algorithm" -> Scheduler: Return computed schedule
+Scheduler -> Scheduler: Save schedule as CSV
+Scheduler --> "Scheduled Event": Terminate
+@enduml

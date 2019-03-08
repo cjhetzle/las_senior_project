@@ -1,0 +1,15 @@
+WARNING: HADOOP_PREFIX has been replaced by HADOOP_HOME. Using value of HADOOP_PREFIX.
+19/02/20 09:34:35 INFO pig.ExecTypeProvider: Trying ExecType : LOCAL
+19/02/20 09:34:35 INFO pig.ExecTypeProvider: Trying ExecType : MAPREDUCE
+19/02/20 09:34:35 INFO pig.ExecTypeProvider: Picked MAPREDUCE as the ExecType
+2019-02-20 09:34:35,662 [main] INFO  org.apache.pig.Main - Apache Pig version 0.16.0.3.1.0.0-78 (rUnversioned directory) compiled Dec 06 2018, 12:29:08
+2019-02-20 09:34:35,662 [main] INFO  org.apache.pig.Main - Logging error messages to: /home/seniorDesign2019/pigmix/scripts/pig_1550655275661.log
+2019-02-20 09:34:36,039 [main] INFO  org.apache.pig.impl.util.Utils - Default bootup file /home/agadler/.pigbootup not found
+2019-02-20 09:34:36,114 [main] INFO  org.apache.pig.backend.hadoop.executionengine.HExecutionEngine - Connecting to hadoop file system at: hdfs://pigfarm-master.ncsu-las.priv:8020
+2019-02-20 09:34:36,500 [main] INFO  org.apache.pig.PigServer - Pig Script ID for the session: PIG-L4.pig-93e32bd5-ef8c-4319-9b2c-d77d86c2101b
+2019-02-20 09:34:36,664 [main] INFO  org.apache.hadoop.yarn.client.api.impl.TimelineClientImpl - Timeline service address: pigfarm-node-1.ncsu-las.priv:8188
+2019-02-20 09:34:37,025 [main] INFO  org.apache.pig.backend.hadoop.PigATSClient - Created ATS Hook
+2019-02-20 09:34:37,595 [main] INFO  org.apache.pig.impl.util.SpillableMemoryManager - Selected heap (PS Old Gen) of size 699400192 to monitor. collectionUsageThreshold = 489580128, usageThreshold = 489580128
+2019-02-20 09:34:37,668 [main] ERROR org.apache.pig.tools.grunt.Grunt - ERROR 1000: Error during parsing. Lexical error at line 19, column 0.  Encountered: <EOF> after : ""
+Details at logfile: /home/seniorDesign2019/pigmix/scripts/pig_1550655275661.log
+2019-02-20 09:34:37,687 [main] INFO  org.apache.pig.Main - Pig script completed in 2 seconds and 103 milliseconds (2103 ms)
